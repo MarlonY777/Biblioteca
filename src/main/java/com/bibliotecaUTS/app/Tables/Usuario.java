@@ -15,7 +15,7 @@ public class Usuario {
 	@Id
 	@Column(name="id")
 	@GeneratedValue( strategy = GenerationType.IDENTITY)
-	private int Id;
+	private Integer id;
 	
 	@NotNull
 	private String nombre;
@@ -24,12 +24,12 @@ public class Usuario {
 	
 	private String carrera;
 
-	public int getId() {
-		return Id;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setId(int id) {
-		Id = id;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getNombre() {
@@ -55,6 +55,8 @@ public class Usuario {
 	public void setCarrera(String carrera) {
 		this.carrera = carrera;
 	}
+
+	
 
 	
 	

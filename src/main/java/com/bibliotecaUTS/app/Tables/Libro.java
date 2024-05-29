@@ -15,46 +15,48 @@ public class Libro {
 	@Id
 	@Column(name="id")
 	@GeneratedValue( strategy = GenerationType.IDENTITY)
-	private int Id;
+	private Integer id;
 	
 	@NotNull
-	private String Titulo;
+	private String titulo;
 	
-	private String Categoria;
+	private String categoria;
 	
-	private String Autor;
+	private String autor;
 
-	public int getId() {
-		return Id;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setId(int id) {
-		Id = id;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getTitulo() {
-		return Titulo;
+		return titulo;
 	}
 
 	public void setTitulo(String titulo) {
-		Titulo = titulo;
+		this.titulo = titulo;
 	}
 
 	public String getCategoria() {
-		return Categoria;
+		return categoria;
 	}
 
 	public void setCategoria(String categoria) {
-		Categoria = categoria;
+		this.categoria = categoria;
 	}
 
 	public String getAutor() {
-		return Autor;
+		return autor;
 	}
 
 	public void setAutor(String autor) {
-		Autor = autor;
+		this.autor = autor;
 	}
+
+	
 	
 	
 }

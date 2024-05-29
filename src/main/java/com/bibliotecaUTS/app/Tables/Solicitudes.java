@@ -10,7 +10,7 @@ public class Solicitudes {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @ManyToOne
     @JoinColumn(name = "usuario_id", nullable = false)
