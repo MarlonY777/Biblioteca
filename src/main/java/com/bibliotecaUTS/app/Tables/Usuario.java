@@ -18,11 +18,11 @@ public class Usuario {
 	private int Id;
 	
 	@NotNull
-	private String Nombre;
+	private String nombre;
 	
-	private String Correo;
+	private String correo;
 	
-	private String Carrera;
+	private String carrera;
 
 	public int getId() {
 		return Id;
@@ -33,28 +33,29 @@ public class Usuario {
 	}
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 
 	public String getCorreo() {
-		return Correo;
+		return correo;
 	}
 
 	public void setCorreo(String correo) {
-		Correo = correo;
+		this.correo = correo;
 	}
 
 	public String getCarrera() {
-		return Carrera;
+		return carrera;
 	}
 
 	public void setCarrera(String carrera) {
-		Carrera = carrera;
+		this.carrera = carrera;
 	}
+
 	
 	
 }
