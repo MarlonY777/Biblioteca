@@ -15,7 +15,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Controller
-@RequestMapping("/Usuario")
+@RequestMapping("/usuario")
 public class UsuarioController {
 
     @Autowired
@@ -53,7 +53,7 @@ public class UsuarioController {
             solicitud.setFechaRegreso(LocalDate.parse(fechaRegreso));
             solicitudesRepository.save(solicitud);
         }
-        return "redirect:/Usuario";
+        return "redirect:/usuario";
     }
 
     @GetMapping("/verSolicitudes")
@@ -74,7 +74,7 @@ public class UsuarioController {
             model.addAttribute("listaLibros", listaLibros);
             return "editarSolicitud";
         }
-        return "redirect:/Usuario/verSolicitudes";
+        return "redirect:/usuario/verSolicitudes";
     }
 
     @PostMapping("/actualizarSolicitud")
@@ -90,12 +90,12 @@ public class UsuarioController {
                 solicitudesRepository.save(solicitud);
             }
         }
-        return "redirect:/Usuario/verSolicitudes";
+        return "redirect:/usuario/verSolicitudes";
     }
 
     @GetMapping("/eliminarSolicitud/{id}")
     public String eliminarSolicitud(@PathVariable("id") Integer id) {
         solicitudesRepository.deleteById(id);
-        return "redirect:/Usuario/verSolicitudes";
+        return "redirect:/usuario/verSolicitudes";
     }
 }
